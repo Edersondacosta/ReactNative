@@ -1,4 +1,4 @@
-import { Text, Button, View } from "react-native";
+import { Text, Button, View, Image } from "react-native";
 import { useState } from "react"
 
 
@@ -50,7 +50,10 @@ export default function Index() {
     <View className="flex-1 justify-center items-center bg-red-600">
       <Text className="text-5xl text-dark-200 font-bold">Bem vindo!!!!!</Text>
 
-    <View>
+
+
+<View>
+<Image  source={require('../assets/images/tom.png')} style={{ width: 30, height: 30 }} />    
       <Text>Você clicou {contador} vezes</Text>
       <Button title="Clique aqui" onPress={() => setContador(contador + 1)} />
       <Text> {usuario.nome} {usuario.id} {usuario.email}</Text>
